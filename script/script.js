@@ -24,6 +24,26 @@
 
 // Buon lavoro e buon divertimento! 🧙‍♂️
 
-cosnt partyInvite = ["luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com" ]
+const partyInvite = ["mario.rossi@gmail.com", "luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com"];
+const insertEmail = prompt("Inserisci la tua email");
+console.log("Email accettate nel party", partyInvite);
+let correct = false;
 
-console.log(partyInvite);
+for (let i = 0; i < partyInvite.length; i++) {
+
+    if (insertEmail === partyInvite[i]) {
+
+        correct = true;
+    }
+
+}
+
+if (correct) {
+    console.log("Benveuto, entra pure")
+
+} else {
+    console.log("Non sei in lista, va via!")
+}
+
+
+
