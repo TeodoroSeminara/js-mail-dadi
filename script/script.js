@@ -7,6 +7,8 @@
 // Nota: 
 // Non è necessario provvedere alla validazione delle email
 
+// const { forwardRef } = require("react");
+
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
@@ -24,26 +26,45 @@
 
 // Buon lavoro e buon divertimento! 🧙‍♂️
 
-const partyInvite = ["mario.rossi@gmail.com", "luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com"];
-const insertEmail = prompt("Inserisci la tua email");
-console.log("Email accettate nel party", partyInvite);
-let correct = false;
+// const partyInvite = ["mario.rossi@gmail.com", "luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com"];
+// const insertEmail = prompt("Inserisci la tua email");
+// console.log("Email accettate nel party", partyInvite);
+// let correct = false;
 
-for (let i = 0; i < partyInvite.length; i++) {
+// for (let i = 0; i < partyInvite.length; i++) {
 
-    if (insertEmail === partyInvite[i]) {
+//     if (insertEmail === partyInvite[i]) {
 
-        correct = true;
-    }
+//         correct = true;
+//     }
 
-}
+// }
 
-if (correct) {
-    console.log("Benveuto, entra pure")
+// if (correct) {
+//     console.log("Benveuto, entra pure")
+
+// } else {
+//     console.log("Non sei in lista, va via!")
+// }
+
+
+
+//2 Secondo esercizio 
+
+const playerScore = Math.floor(Math.random() * 6) + 1;
+const pcScore = Math.floor(Math.random() * 6) + 1;
+
+console.log("L'umano lancia", playerScore, "La macchina lancia", pcScore);
+
+
+if (playerScore < pcScore) {
+    console.log("Vince la macchina!");
+
+} else if (playerScore === pcScore) {
+
+    console.log("Parità Peccato");
+    
 
 } else {
-    console.log("Non sei in lista, va via!")
+    console.log("Vince l'umano!");
 }
-
-
-
