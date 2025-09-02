@@ -26,45 +26,26 @@
 
 // Buon lavoro e buon divertimento! 🧙‍♂️
 
-// const partyInvite = ["mario.rossi@gmail.com", "luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com"];
-// const insertEmail = prompt("Inserisci la tua email");
-// console.log("Email accettate nel party", partyInvite);
-// let correct = false;
+const partyInvite = ["mario.rossi@gmail.com", "luca.bianchi@gmail.com", "giulia.verdi@gmail.com", "andrea.neri@gmail.com", "sara.romano@gmail.com", "marco.ferrari@gmail.com"];
+const insertEmail = prompt("Inserisci la tua email");
+console.log("Email accettate nel party", partyInvite);
+let correct = false;
 
-// for (let i = 0; i < partyInvite.length; i++) {
+for (let i = 0; i < partyInvite.length; i++) {
 
-//     if (insertEmail === partyInvite[i]) {
+    if (insertEmail === partyInvite[i]) {
 
-//         correct = true;
-//     }
+        correct = true;
+    }
 
-// }
+}
 
-// if (correct) {
-//     console.log("Benveuto, entra pure")
-
-// } else {
-//     console.log("Non sei in lista, va via!")
-// }
-
-
-
-//2 Secondo esercizio 
-
-const playerScore = Math.floor(Math.random() * 6) + 1;
-const pcScore = Math.floor(Math.random() * 6) + 1;
-
-console.log("L'umano lancia", playerScore, "La macchina lancia", pcScore);
-
-
-if (playerScore < pcScore) {
-    console.log(`Ha vinto la macchina, con il punteggio di ${pcScore}`  );
-
-} else if (playerScore === pcScore) {
-
-    console.log(`Parità peccato, con il punteggio di ${pcScore} e ${playerScore} `);
-    
+if (correct) {
+    console.log("Benveuto, entra pure")
 
 } else {
-    console.log(`Ha vinto l'umano, con il punteggio di ${playerScore}`);
+    console.log("Non sei in lista, va via!")
 }
+
+
+
